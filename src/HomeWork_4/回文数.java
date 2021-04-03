@@ -4,7 +4,7 @@ import HomeWork_2.sushu;
 
 import java.util.Scanner;
 
-public class 回文数 {
+public class 回文数 extends DeleteNumber {
     public static void main(String arge[]) {
         Scanner in = new Scanner(System.in);
         int a, b, c;

@@ -14,7 +14,7 @@ package HomeWork_4;
 
 import java.util.Scanner;
 
-public class ten_ge_shu {
+public class ten_ge_shu extends findallLetter {
     public static void main(String args[]) {
         System.out.println("Please input 10 numbers:");
         Scanner in = new Scanner(System.in);

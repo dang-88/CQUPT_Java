@@ -3,7 +3,7 @@ package HomeWork_4;
 //import java.util.Arrays;
 import java.util.Scanner;
 
-public class findallLetter {
+public class findallLetter extends 回文数 {
     public static void main(String arggs[]) {
         Scanner in = new Scanner(System.in);
         System.out.println("Please input a sentence:");
