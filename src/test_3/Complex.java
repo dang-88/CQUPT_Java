@@ -6,30 +6,30 @@ public class Complex {
     double realPart;
     double imagPart;
 
-    public Complex(double realPart, double imagPart) {
+    public Complex(double realPart, double imagPart) {                 //定义复数类
         this.realPart = realPart;
         this.imagPart = imagPart;
     }
 
-    public static Complex add(Complex complex1, Complex complex2) {
+    public static Complex add(Complex complex1, Complex complex2) {    //复数加法运算
         double realPart = complex1.realPart + complex2.realPart;
         double imagPart = complex1.imagPart + complex2.imagPart;
         return new Complex(realPart, imagPart);
     }
 
-    public static Complex sub(Complex complex1, Complex complex2) {
+    public static Complex sub(Complex complex1, Complex complex2) {    //复数减法运算
         double realPart = complex1.realPart - complex2.realPart;
         double imagPart = complex1.imagPart - complex2.imagPart;
         return new Complex(realPart, imagPart);
     }
 
-    public static Complex and(Complex complex1, Complex complex2) {
+    public static Complex and(Complex complex1, Complex complex2) {    //复数乘法运算
         double realPart = complex1.realPart * complex2.realPart + complex1.imagPart * complex2.imagPart * (-1);
         double imagPart = complex1.realPart * complex2.imagPart + complex2.realPart * complex1.imagPart;
         return new Complex(realPart, imagPart);
     }
 
-    public static void out(Complex complex1, Complex complex2) {
+    public static void out(Complex complex1, Complex complex2) {       //结果输出
         System.out.println("ComplexNumber a: " + complex1.realPart + " + " + complex1.imagPart + "i");
         System.out.println("ComplexNumber b: " + complex2.realPart + " + " + complex2.imagPart + "i");
         System.out.println("(a + b) = " + add(complex1, complex2).realPart + " + " + add(complex1, complex2).imagPart + "i");
