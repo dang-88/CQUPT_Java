@@ -10,7 +10,7 @@ public class FenDuanHanShu {
         if (x > 0) {
             y = 1 / Math.exp(x);
         } else if (x < 0) {
-            y =0 -Math.exp(x);
+            y = 0 - Math.exp(x);
         } else {
             y = 1;
         }
