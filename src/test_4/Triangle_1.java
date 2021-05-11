@@ -22,7 +22,7 @@ public class Triangle_1 {
         double y = in.nextDouble();
         double z = in.nextDouble();
         Triangle_1 t = new Triangle_1(x, y, z);
-//构造方法通过new运算符调用,需要将x y z变量加进去
+        //构造方法通过new运算符调用,需要将x y z变量加进去
         System.out.println("perimeter=" + t.getPerimeter());
         System.out.println("area=" + t.getArea());
         System.out.println(t);
