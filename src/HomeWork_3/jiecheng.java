@@ -16,7 +16,6 @@ import java.util.Scanner;
 
 public class jiecheng {
     public static void main(String args[]) {
-
         Scanner in = new Scanner(System.in);
         System.out.println("Please input a number:");
         int n = in.nextInt();
@@ -26,8 +25,11 @@ public class jiecheng {
                 a = a * i;
                 i++;
             } while (i <= c);
-            b = b + a; c--; a = 1; i = 1;
+            b = b + a;
+            c--;
+            a = 1;
+            i = 1;
         } while (c != 0);
-        System.out.println("1+2!+3!+...+n!= "+b);
+        System.out.println(b);
     }
 }

@@ -21,7 +21,8 @@ public class Triangle {
     }
 
     public static double getPerimeter(double a, double b, double c) {         //计算三角形周长
-        return a + b + c;
+        //System.out.println(a+" "+b+" "+c+" ");
+        return (a + b + c);
     }
 
     public static double getArea(double a, double b, double c) {
@@ -29,7 +30,7 @@ public class Triangle {
     }
 
     public static void out(double a, double b, double c) {                    //输出函数
-        System.out.println("perimeter=" + getPerimeter(a, b, c));
+        System.out.printf("perimeter=%.1f\n", getPerimeter(a, b, c));
         System.out.printf("area=%.1f\n", getArea(a, b, c));
         System.out.println("a=" + a + ",b=" + b + ",c=" + c);
     }
