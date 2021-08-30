@@ -13,7 +13,7 @@ public class strShiftLetter_2 {
         char[] charNum = new char[str.length()];
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) >= 'A' && str.charAt(i) <= 'Z') {
-                charNum[c] = (str.charAt(i));
+                charNum[c] = str.charAt(i);
                 c++;
             }
         }

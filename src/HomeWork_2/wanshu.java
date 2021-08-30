@@ -1,25 +1,27 @@
 package HomeWork_2;
 
 import java.util.Scanner;
+
 public class wanshu {
-    public static void wanshu(int min,int max){     //减法计算完数
-        for (int a=min;a<=max;a++){
-            int s=a;
-            for (int i=1;i<a;i++){
-                if (a%i==0){
-                    s=s-i;
+    public static void wanshu(int min, int max) {     //减法计算完数
+        for (int a = min; a <= max; a++) {
+            int s = a;
+            for (int i = 1; i < a; i++) {
+                if (a % i == 0) {
+                    s = s - i;
                 }
             }
-            if (s==0){
-                System.out.printf("%d,",a);
+            if (s == 0) {
+                System.out.printf("%d,", a);
             }
         }
     }
-    public static void main(String arge[]){
+
+    public static void main(String arge[]) {
         Scanner in = new Scanner(System.in);
-        int min = in.nextInt(),max=in.nextInt();
-        System.out.println( min+" to "+max+" wanshu:");
-        wanshu(min,max);
+        int min = in.nextInt(), max = in.nextInt();
+        System.out.println(min + " to " + max + " WanShu:");
+        wanshu(min, max);
     }
 }
 /*

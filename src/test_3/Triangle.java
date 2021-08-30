@@ -32,7 +32,9 @@ public class Triangle {
     public static void out(double a, double b, double c) {                    //输出函数
         System.out.printf("perimeter=%.1f\n", getPerimeter(a, b, c));
         System.out.printf("area=%.1f\n", getArea(a, b, c));
-        System.out.println("a=" + a + ",b=" + b + ",c=" + c);
+        System.out.printf("a=%.1f", a);
+        System.out.printf(",b=%.1f", b);
+        System.out.printf(",c=%.1f\n", c);
     }
 }
 

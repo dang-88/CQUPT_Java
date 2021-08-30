@@ -5,13 +5,16 @@ import java.util.*;
 
 class Fenxi {
     public static double getTotalScore(String s) {
-        String regex = "[^0123456789]";
-        String digitMess = s.replaceAll(regex, "*");
-        StringTokenizer fenxi = new StringTokenizer(digitMess, "*");
+        Scanner scanner = new Scanner(s);
+        scanner.useDelimiter("[^0123456789.]+");
         double totalScore = 0;
-        while (fenxi.hasMoreTokens()) {
-            double score = Double.parseDouble(fenxi.nextToken());
-            totalScore = totalScore + score;
+        while (scanner.hasNext()) {
+            try {
+                double score = scanner.nextDouble();
+                totalScore = totalScore + score;
+            } catch (InputMismatchException exp) {
+                String t = scanner.next();
+            }
         }
         return totalScore;
     }
@@ -19,8 +22,8 @@ class Fenxi {
 
 public class AnalysisResult {
     public static void main(String[] args) {
-        File fRead = new File("D:\\yingyong\\IntelliJ IDEA Community Edition 2020.3.2\\IdeaProjects\\src\\test_7\\score.txt");
-        File fWriter = new File("D:\\yingyong\\IntelliJ IDEA Community Edition 2020.3.2\\IdeaProjects\\src\\test_7\\scoreAnalysis.txt");
+        File fRead = new File("score.txt");
+        File fWriter = new File("scoreAnalysis.txt");
         try {
             Writer out = new FileWriter(fWriter);
             BufferedWriter bufferedWriter = new BufferedWriter(out);
@@ -35,7 +38,7 @@ public class AnalysisResult {
                 bufferedWriter.newLine();
             }
             bufferedReader.close();
-            bufferedReader.close();
+            bufferedWriter.close();
         } catch (IOException e) {
             System.out.println(e.toString());
         }

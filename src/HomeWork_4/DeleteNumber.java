@@ -11,12 +11,12 @@ public class DeleteNumber {
             S[i] = S1[i] - '0';                   //由于是字符串，故需要减去'0'来实现数字的实现
         }
         int N = in.nextInt();                     //输入要删除的位数
-        int  i;
+        int i;
         int length = S1.length;
         for (i = 0; i < length; i++) {
             if (N > 0) {                          //判断要删除的个数是否删除完
-                while (S[i] > S[i + 1]&&N!=0) {   //判断第一位比后一位大
-                    for (int j=i;j<length;j++){   //位移删数操作
+                while (S[i] > S[i + 1] && N != 0) {   //判断第一位比后一位大
+                    for (int j = i; j < length; j++) {   //位移删数操作
                         S[j] = S[j + 1];
                     }
                     N--;
