@@ -23,7 +23,7 @@ class Book implements Comarable {
         if (SB.price != NB.price) {
             return null;
         }
-        return NB;
+        return NB; 
     }
 }
 
